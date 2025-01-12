@@ -45,14 +45,6 @@ python app.py
 4. Set your start time
 5. Click process and watch the magic happen!
 
-## 🎨 Overlay Styles
-
-The application includes 5 unique overlay styles that can be applied to your videos:
-* Style 1: Classic overlay
-* Style 2: Modern look
-* Style 3: Minimalist design
-* Style 4: Bold statement
-* Style 5: Premium finish
 
 ## 📝 Note
 
