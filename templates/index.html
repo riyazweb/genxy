@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Processing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px 30px 30px 30px; /* Add top padding */
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            text-align: center;
+            
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #069bff;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+
+        /* CSS for smartphone screens */
+        @media only screen and (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            input[type="text"],
+            input[type="number"] {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ARTHUR POST</h1>
+        <form method="POST">
+            <label for="video_link">Video Link:</label><br>
+            <input type="text" id="video_link" name="video_link"  ><br>
+            <label for="tiktok"> Tiktok Link:</label><br>
+            <input type="text" id="tiktok" name="tiktok"  ><br>
+            <label for="start_time">Start Time (in seconds):</label><br>
+            <input type="number" id="start_time" name="start_time" value="0" required><br>
+            <label for="starts">1 or 2 or 3:</label><br>
+            <input type="number" id="starts" name="starts" value="1" required><br>
+            <input type="submit" value="Process">
+        </form>
+
+        <div class="images"></div>
+        <h2>HERE SELECT 1 OR 2 OR 3</h2>
+            <img src="https://lh3.googleusercontent.com/u/3/drive-viewer/AKGpihbYoJIpKz2KmNelpaEM-MU3tDUtvUSmyouAzdBqI9Qh54XgQHopxBl2lD8V5ZuQkmaujCdauNOW9NC48R3MkebU1k54AQ=w2937-h6363" alt="topx" style="width: 100px;">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbQLEZYyaWTRm6YQTJCkaeF2xUSxv0hjSV0DDmFpthvI7_BLKfY-ZwCCzRlWq9eX27HYnWjE3urNSvQ7qhsKZhbyxQH=w2937-h6363" alt="topx2" style="width: 100px;">
+            <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihYpklrN8Zzr3gIszn9ve4m1eSHgdqEYbpCSNJbOzfw214GWqoSklehmGv-y6Co7r0HOv8MoDBRJuHgAMJF6ckYgSNCl=w2937-h6363" alt="topx3" style="width: 100px;">
+        </div>
+    </div>
+</body>
+
+</html>

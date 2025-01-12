@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENX2</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">GENX2</h1>
+
+        <form method="POST" action="/" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+      
+            <div class="mb-4">
+                <label for="video_link_top" class="block text-black font-semibold font-bold">Top Video Link:</label>
+                <input type="text" class="form-input mt-1 block w-full" id="video_link_top" name="video_link_top" required>
+            </div>
+            <div class="mb-4">
+                <label for="video_link_bottom" class="block text-black font-semibold font-bold">Bottom Video Link:</label>
+                <input type="text" class="form-input mt-1 block w-full" id="video_link_bottom" name="video_link_bottom" required>
+            </div>
+            <div class="mb-4">
+                <label for="start_time_top" class="block text-black font-semibold font-bold">Start Time for Top Video Segment (in seconds):</label>
+                <input type="number" class="form-input mt-1 block w-full" id="start_time_top" name="start_time_top" value="0" required>
+            </div>
+            <div class="mb-4">
+                <label for="start_time_bottom" class="block text-black font-semibold font-bold">Start Time for Bottom Video Segment (in seconds):</label>
+                <input type="number" class="form-input mt-1 block w-full" id="start_time_bottom" name="start_time_bottom" value="0" required>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Process</button>
+        </form>
+        {% if success %}
+            <p class="mt-4 text-center font-bold">Video processing completed. <a href="/" class="text-blue-500 hover:underline">Process another video</a>.</p>
+        {% endif %}
+        
+    </div>
+</body>
+</html>
